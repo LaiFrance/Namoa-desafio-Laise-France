@@ -57,4 +57,9 @@ Exemplo de como deve ficar na home:
 <products-list tipodeproduto="laptops"></products-list>
 ```
 
+## Aplicar regra de CSS
+No arquivo `home.component.scss`, aplicar nova regra de css para alterar apenas a cor do título `Laptops` para cor vermelha.
+Manter o título Smartphones e Produtos na cor Azul
+Nenhuma classe de CSS pode ser criada ou aplicada no arquivo `home.component.html` nesse desafio.
+
 ## Execute os testes do projeto
