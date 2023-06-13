@@ -15,7 +15,7 @@ import { HomeConfigRouting } from './home/home.config.routing';
 				pathMatch: 'full'
 			},
 			{ path: '**', redirectTo: 'home' }
-			
+
 
 		], {}),
 

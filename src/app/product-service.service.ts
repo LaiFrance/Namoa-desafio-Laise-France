@@ -4,18 +4,18 @@ import { Observable } from 'rxjs';
 import { APIProductsRoot } from './api-services/products.service.interface';
 
 @Injectable({
-  providedIn: 'root'
+	providedIn: 'root'
 })
 export class ProductService {
-  getProducts(tipoDeProduto: string) {
-    throw new Error('Method not implemented.');
-  }
+	getProducts(tipoDeProduto: string) {
+		throw new Error('Method not implemented.');
+	}
 
-  private baseUrl = 'https://dummyjson.com/products/category';
+	private baseUrl = 'https://dummyjson.com/products/category';
 
-  constructor(private http: HttpClient) { }
+	constructor(private http: HttpClient) { }
 
-  getProductByType(productType: string): Observable<APIProductsRoot> {
-    return this.http.get<APIProductsRoot>(`${this.baseUrl}/${productType}`);
-  }
+	getProductByType(productType: string): Observable<APIProductsRoot> {
+		return this.http.get<APIProductsRoot>(`${this.baseUrl}/${productType}`);
+	}
 }

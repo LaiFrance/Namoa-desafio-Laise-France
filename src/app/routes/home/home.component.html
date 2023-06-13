@@ -1,3 +1,19 @@
-<h1> Produtos</h1>
+<div layout="column" layout-fill layout-margin layout-align="strech start" class="home-content">
 
-<products-list></products-list>
+	<div flex="none" class="title">Produtos</div>
+
+	<div layout="row" flex>
+
+		<div layout="column" layout-margin flex class="smartphones-container">
+			<h1 class="title">Smartphones</h1>
+			<products-list [products]="smartphones" title="Smartphones"></products-list>
+		</div>
+
+		<div layout="column" layout-margin flex class="laptops-container">
+			<h1 class="title">Laptops</h1>
+			<products-list [products]="laptops" title="Laptops"></products-list>
+		</div>
+
+	</div>
+
+</div>
