@@ -1,4 +1,6 @@
-![WhatsApp Image 2023-06-13 at 13 10 41](https://github.com/LaiFrance/Namoa-desafio/assets/91226847/64a13f77-deeb-4833-9901-42c6e450d4bd)
+
+![screencapture-namoa-desafio-vercel-app-home-2023-06-13-15_26_22](https://github.com/LaiFrance/Namoa-desafio-Laise-France/assets/91226847/2b7001ac-806f-4e3c-adf1-164c929d15cb)
+
 
 
 # Desafio Namoa Webapp
