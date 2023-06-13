@@ -1,3 +1,6 @@
+![WhatsApp Image 2023-06-13 at 13 10 41](https://github.com/LaiFrance/Namoa-desafio/assets/91226847/64a13f77-deeb-4833-9901-42c6e450d4bd)
+
+
 # Desafio Namoa Webapp
 
 ## Requisitos
