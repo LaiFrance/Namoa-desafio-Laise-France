@@ -8,6 +8,7 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { MaterialModules } from './material.module';
 
 import { MAT_PAGINATOR_DEFAULT_OPTIONS } from '@angular/material/paginator';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
 	declarations: [
@@ -18,7 +19,8 @@ import { MAT_PAGINATOR_DEFAULT_OPTIONS } from '@angular/material/paginator';
 		FormsModule,
 		ReactiveFormsModule,
 		RouterModule,
-		MaterialModules
+		MaterialModules,
+		MatCardModule
 	],
 	exports: [
 		CommonModule,

@@ -15,6 +15,7 @@ import { SharedModule } from './shared.module';
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { CdkOverlayContainer } from './components/main-controller/cdk-overlay-container/cdk-overlay-container.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatCardModule } from '@angular/material/card';
 
 registerLocaleData(localePT);
 registerLocaleData(localeDE);
@@ -38,7 +39,8 @@ locales.map(item => {
 		HttpClientModule,
 		AppRoutingModule,
 		SharedModule,
-		ReactiveFormsModule
+		ReactiveFormsModule,
+		MatCardModule
 	],
 	providers: [
 		{provide: LOCALE_ID, useValue: locale },
