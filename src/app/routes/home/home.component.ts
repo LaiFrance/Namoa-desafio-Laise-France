@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/product-service.service';
 import { APIProductsRoot } from 'src/app/api-services/products.service.interface';
-import { concatMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
