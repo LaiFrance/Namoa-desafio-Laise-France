@@ -14,12 +14,8 @@
 	color: blue;
 }
 
-products-list[tipodeproduto="laptops"] mat-card-title {
-	color: red;
-  }
-  
-  products-list[tipodeproduto="smartphones"] mat-card-title,
-  products-list mat-card-title {
-	color: blue;
-  }
-  
+#laptopsTitle {
+    color: red;
+}
+
+
