@@ -1,20 +1,16 @@
 :host {
+    display: block;
+    height: 100%;
+    min-height: 100%;
 
-	display: block;
-	height: 100%;
-	min-height: 100%;
-
-	.home-content {
-		height: auto;
-	}
-
+    .home-content {
+        height: auto;
+    }
 }
 
 #title {
-	color: blue;
-	font-size: large;
-	
-	
+    color: blue;
+    font-size: large;
 }
 
 #laptopsTitle {
@@ -22,5 +18,51 @@
 }
 
 #smartphonesTitle {
-  color: blue;
+    color: blue;
+}
+
+// Estilo padrão
+mat-card {
+    transition: box-shadow .3s;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+  
+    // Ações de card
+    mat-card-actions {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+// Regras para telas pequenas (mobile)
+@media screen and (max-width: 600px) {
+    mat-card {
+        width: 100%;  // Ajuste para ocupar todo o espaço disponível em telas pequenas
+    }
+
+    #title, #laptopsTitle, #smartphonesTitle {
+        font-size: medium;  // Ajusta o tamanho da fonte para títulos em telas pequenas
+    }
+}
+
+// Regras para telas médias (tablet)
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    mat-card {
+        width: 75%;  // Ajuste para ocupar 75% do espaço disponível em telas médias
+    }
+
+    #title, #laptopsTitle, #smartphonesTitle {
+        font-size: large;  // Ajusta o tamanho da fonte para títulos em telas médias
+    }
+}
+
+// Regras para telas grandes (desktop)
+@media screen and (min-width: 1025px) {
+    mat-card {
+        width: 50%;  // Ajuste para ocupar 50% do espaço disponível em telas grandes
+    }
+
+    #title, #laptopsTitle, #smartphonesTitle {
+        font-size: x-large;  // Ajusta o tamanho da fonte para títulos em telas grandes
+    }
 }

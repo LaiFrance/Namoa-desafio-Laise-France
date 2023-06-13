@@ -1,20 +1,40 @@
+<!-- Início do layout principal -->
 <div layout="column" layout-fill layout-margin layout-align="strech start">
 
+	<!-- Título principal -->
 	<div id="title" flex="none">Produtos</div>
 
+	<!-- Início do layout da linha que contém as listas de produtos -->
 	<div layout="row" flex>
 
+		<!-- Início da coluna de smartphones -->
 		<div layout="column" layout-margin flex>
 			
+			<!-- Título da seção de smartphones -->
 			<h1 id="smartphonesTitle">Smartphones</h1>
-			<products-list [products]="smartphones" title="Smartphones"></products-list>
-		</div>
 
-		<div layout="column" layout-margin flex>
-			<h1 id="laptopsTitle">Laptops</h1>
-			<products-list [products]="laptops" title="Laptops"></products-list>
+			<!-- Lista de produtos de smartphones. 
+			O valor dos produtos é passado da propriedade smartphones do componente -->
+			<products-list [products]="smartphones" title="Smartphones"></products-list>
+
 		</div>
+		<!-- Fim da coluna de smartphones -->
+
+		<!-- Início da coluna de laptops -->
+		<div layout="column" layout-margin flex>
+			
+			<!-- Título da seção de laptops -->
+			<h1 id="laptopsTitle">Laptops</h1>
+
+			<!-- Lista de produtos de laptops. 
+			O valor dos produtos é passado da propriedade laptops do componente -->
+			<products-list [products]="laptops" title="Laptops"></products-list>
+
+		</div>
+		<!-- Fim da coluna de laptops -->
 
 	</div>
+	<!-- Fim do layout da linha que contém as listas de produtos -->
 
 </div>
+<!-- Fim do layout principal -->
