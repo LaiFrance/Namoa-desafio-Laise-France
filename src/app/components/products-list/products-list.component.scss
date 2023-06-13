@@ -1,28 +1,39 @@
 mat-card {
     transition: box-shadow .3s;
-    width: 80%;  // width ajustada para 60%
-    height: 800px;  // define uma altura fixa
-    box-sizing: border-box;  // faz com que padding e border não afetem a largura e altura totais
+    width: 50%;  // width ajustada para 50%
     border-radius: 5px;
-    margin: 1.5em;
-    display: flex;  // adicionado para alinhar o conteúdo no centro
-    flex-direction: column;
-    justify-content: space-between;
-
+    margin-bottom: 1.5em;
+  
     &:hover {
-        box-shadow: 0 0.5em 1em -0.3em rgba(158,158,158,.5);
-        transform: translateY(-5px);
+      box-shadow: 0 0.5em 1em -0.3em rgba(158,158,158,.5);
+      transform: translateY(-5px);
     }
-
+  
     mat-card-actions {
+      display: flex;
+      justify-content: space-around;
+      button {
         display: flex;
-        justify-content: space-around;
-        button {
-            display: flex;
-            align-items: center;
-            i {
-                margin-right: 5px;
-            }
+        align-items: center;
+        i {
+          margin-right: 5px;
         }
+  
+        &:first-child {
+          background-color: #4caf50;  // verde
+          color: white;
+        }
+  
+        &:nth-child(2) {
+          background-color: #f44336;  // vermelho
+          color: white;
+        }
+  
+        &:last-child {
+          background-color: #2196f3;  // azul
+          color: white;
+        }
+      }
     }
-}
+  }
+  
